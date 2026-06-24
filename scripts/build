@@ -3,6 +3,6 @@ set -euo pipefail
 
 echo "Building..."
 
-spago build -u '-g corefn'
+spago build
 
 pslua --foreign-path . --ps-output output --entry Data.Lazy --lua-output-file dist/Data.Lazy.lua
